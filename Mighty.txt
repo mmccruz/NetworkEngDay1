@@ -1,0 +1,153 @@
+root 
+C1sc0123
+
+C1sc0123
+
+Nettask2: hardware and software:
+hardware: lazada usb console cable - serial cable
+
+software : poor:putty
+           rich: SecureCRT : 129$
+
+task3: command line:
+
+router> = usermode/friendzone(no access)
+
+router# = privilege mode/cubaoMode
+
+router(config)# - globalmode/Pasig (all touch no show)
+
+top 3 command
+1. show run
+2. show start
+3. write memory
+
+NESKILL 3: Server Config.
+
+DNS  - Domain Name System
+
+PrivateIPAddress:
+
+VeryRich		PwedeNa			Hampaslupa
+10.0.0.0/8		172.16.0.0/16		192.168.0.0/24
+16M			65534			254
+
+
+
+Ex. 1: Design a callcenter fo accenture.com using 1300 Agents, Tls, PM, QAo using 10.0.0.0/8
+C: concert 1300 agents it bits : 11
+S: subtract: /32 - /11 = /21 -> 3rd,8i (ipasok ang 8i sa 3rd)
+I: pasok ang 8i sa 3rd, twice.
+
+accenturecebu.com:
+10.0.8.0/21
+1st valid IP: 10.0.8.1
+last Valid IP: 10.0.15.254
+lastBroadcast: 10.0.15.255/21
+NOTaccenturecebu.com: 10.0.16.0/21 -1
+
+
+
+Ex. 1: Design a callcenter fo SykesAsia.com using 750 Agents, Tls, PM, QAo using 10.0.0.0/8
+C: concert 750 agents it bits : 10 bits
+Subtract : /32 - /10 = /22 3rd (ipasok ang 4i sa 3rd)
+I pasok ang 4i sa 3rd, twice
+
+SykesAsia.com
+10.0.4.0 /22 + 1
+list valid IP: 10.0.4.1
+last valid IP:10.0.7.254
+last broadcast: 10.0.7.255 /22
+Not SykesAsia.com : 10.0.8.0 /22 -1
+
+
+Ex. 3: Design a callcenter fo Telus.com using 750 Agents, Tls, PM, QAo using 10.0.0.0/8
+C: concert 2300 agents it bits : 12 bits
+Subtract /32 - /12 = /20 bits (3rd, 16i)
+Ipasok ang 16i sa 3rd
+
+Telus.com
+10.0.16.0 /20bits + 1
+list valid IP: 10.0.16.1 (ROUTER)
+Last valid IP: 10.0.31.254
+Last Broadcast: 10.0.31.255 /20
+Not Telus 10.0.32.0 /20 bits -1
+
+
+
+
+Ex. 4: Design a callcenter fo ETELECARE.com using 350 Agents, Tls, 
+PM, QAo using 10.0.0.0/8
+
+C: concert 350 agents it bits : 9 bits
+Subtract /32 - /9 = /23 bits (3rd, 2i)
+Ipasok ang 2i sa 3rd
+
+etelecare.com
+10.0.2.0 /23bits +1
+List Valid IP: 10.0.2.1 (Router)
+Last Valid IP:  10.0.4.254
+Last broadcast 10.0.4.255 
+Note etelecare.com: 10.0.4.0 /23bits -1
+
+
+
+Ex. 4: Design a callcenter fo ALORICA.com using 8500 Agents, Tls, 
+PM, QAo using 10.0.0.0/8
+Convert 8500 is 14bits
+Subtract /32 - 14/bits = /18(3rd, 64i)
+Ipasok sa 3rd ang 64i
+
+ALorica.com
+10.0.64.0  /18bits +1
+List Valid IP : 10.0.64.1 (ROUTER)
+Last Valud IP : 10.0.64.254
+Last Broadcast: 10.0.64.255
+NOTALorica.com : 10.0.128.0 /18bits -1
+
+
+Ex. 6: Design a callcenter fo PNP.GOV.PH using 50 Agents, Tls, 
+PM, QAo using 10.0.0.0/8
+Convert 50 - 6 bits
+Subtract /32 - /6bits = /26 (4th,64i)
+Ipasok sa 4rd ang 64i
+
+PNP.GOV.PH
+10.0.0.64 6/bits +1
+List Valid IP : 10.0.0.65 (ROUTER)
+Last Valid IP: 10.0.0.65
+Last Broadcast: 10.0.4.127
+not PNP.GOV.PH 10.0.0.128 / 6bits
+
+
+
+Ex. 7: Design a callcenter fo GSIS.GOV.PH using 50 Agents, Tls, 
+PM, QAo using 172.16.0.0/16
+Convert 210 - 8 bits
+Subtract /32 - /8bits = /24 (3rd,1i)
+Ipasok sa 3rd ang 1i
+
+GSIS.GOV.PH : 172.16.1.0 + 1
+List Valid: 172.16.1.1 (ROUTER)
+Last Valid IP
+Last BroadCast 172.16.1.255
+
+not GSIS.GOV.PH : 172.16.2.0 -1
+
+
+
+Design PHILHEALTH.GOV.PH using 10.0.0.0/8 with 388 hosts only, for a PILOT Office. 
+Convert 388 = 9 bits
+Subtract /32 -/9 bits = /23 (3rd, 2i)
+Ipasok ang 2i sa 3rd
+
+PHILHEALTH.GOV.PH :10.0.2.0 +1
+List Valid: 10.0.2.1
+Last BroadCast:10.0.2.255
+NOT PHILHEALTH.GOV.PH 10.0.4.0 -1
+
+
+
+
+
+
